@@ -17,6 +17,7 @@ export class AppComponent implements OnInit{
   characters:any;
   characterName = '';
   characerDesc = '';
+  imgSource = '';
 
   ngOnInit(): void {
 
@@ -33,6 +34,7 @@ export class AppComponent implements OnInit{
   {
     this.characterName = this.characters[0].name;
     this.characerDesc = this.characters[0].description;
+    this.imgSource = `${this.characterName}.png`;
   }
 
   GenerateUsername() :void
@@ -41,5 +43,6 @@ export class AppComponent implements OnInit{
 
     this.characterName = this.characters[random].name;
     this.characerDesc = this.characters[random].description;
+    this.imgSource = `${this.characterName}.png`;
   }  
 }

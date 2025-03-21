@@ -1,0 +1,19 @@
+div.Portrait
+{
+    display: flex;
+    justify-content: center;
+}
+
+p.Description
+{
+    display: flex;
+    justify-content: center;
+    padding-left: 88px;
+    padding-right: 88px;
+    margin-bottom: 40px;
+}
+
+img
+{
+    width: 35%;
+}
